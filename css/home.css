@@ -5,7 +5,7 @@
 
 .hero{
     position: relative;
-    width: 100%;
+    width: 100%; 
     height: calc(100vh - 82px);
     margin-top: 82px;
     overflow: hidden;
