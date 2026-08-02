@@ -319,10 +319,64 @@ img{
    MOBILE MENU
 ========================================== */
 
+/*==================================
+        MOBILE MENU
+===================================*/
+
 .mobile-menu{
+    position:fixed;
+    top:0;
+    right:-100%;
+    width:320px;
+    height:100vh;
+    background:#0b0b0b;
+    z-index:1000;
+    transition:.4s ease;
+    padding:30px;
+    display:flex;
+    flex-direction:column;
+}
 
-    display:none;
+.mobile-menu.active{
+    right:0;
+}
 
+.mobile-header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin-bottom:50px;
+}
+
+.mobile-header img{
+    width:160px;
+}
+
+.close-menu{
+    background:none;
+    border:none;
+    color:#fff;
+    font-size:28px;
+    cursor:pointer;
+}
+
+.mobile-menu ul{
+    display:flex;
+    flex-direction:column;
+    gap:25px;
+}
+
+.mobile-menu ul li a{
+    font-size:18px;
+    color:#fff;
+    font-weight:500;
+}
+
+.mobile-buttons{
+    margin-top:auto;
+    display:flex;
+    flex-direction:column;
+    gap:15px;
 }
 
 /* ==========================================
