@@ -24,154 +24,160 @@
             NAVBAR
     ========================== -->
 
-    <header class="header">
+   <!-- ==========================================
+                HEADER
+========================================== -->
 
-        <div class="container">
+<header class="header">
 
-            <!-- Logo -->
-            <a href="index.html" class="logo">
+    <div class="container">
 
-                <img src="images/pineapple.png" alt="PineapplePro">
+        <!-- Logo -->
+        <a href="index.html" class="logo">
+            <img src="images/pineapple.png" alt="PineapplePro">
+        </a>
 
-            </a>
+        <!-- Desktop Navigation -->
+        <nav class="navbar">
 
-            <!-- Desktop Navigation -->
-            <nav class="navbar">
+            <ul class="nav-links">
 
-                <ul class="nav-links">
+                <li>
+                    <a href="index.html" class="active">Home</a>
+                </li>
 
-                    <li><a href="index.html" class="active">Home</a></li>
+                <li>
+                    <a href="about.html">About</a>
+                </li>
 
-                    <li><a href="about.html">About</a></li>
+                <!-- Services -->
+                <li class="dropdown">
 
-                    <li class="dropdown">
+                    <a href="services.html">
+                        Services
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </a>
 
-                        <a href="services.html">
+                    <div class="mega-menu">
 
-                            Services
+                        <div class="mega-column">
 
-                            <i class="fa-solid fa-chevron-down"></i>
-
-                        </a>
-
-                        <!-- Mega Menu -->
-                        <div class="mega-menu">
-
-                            <div class="mega-column">
-
-                                <a href="#">Laptop & Desktop</a>
-
-                                <a href="#">Cloud Solutions</a>
-
-                                <a href="#">Networking</a>
-
-                            </div>
-
-                            <div class="mega-column">
-
-                                <a href="#">CCTV Solutions</a>
-
-                                <a href="#">Software</a>
-
-                                <a href="#">AMC Services</a>
-
-                            </div>
+                            <a href="#">Laptop & Desktop</a>
+                            <a href="#">Cloud Solutions</a>
+                            <a href="#">Networking</a>
 
                         </div>
 
-                    </li>
+                        <div class="mega-column">
 
-                    <li><a href="solutions.html">Solutions</a></li>
+                            <a href="#">CCTV Solutions</a>
+                            <a href="#">Software Solutions</a>
+                            <a href="#">AMC Services</a>
 
-                    <li><a href="industries.html">Industries</a></li>
+                        </div>
 
-                    <li><a href="careers.html">Careers</a></li>
+                    </div>
 
-                    <li><a href="contact.html">Contact</a></li>
+                </li>
 
-                </ul>
+                <li>
+                    <a href="solutions.html">Solutions</a>
+                </li>
 
-            </nav>
+                <li>
+                    <a href="industries.html">Industries</a>
+                </li>
 
-            <!-- Right Buttons -->
-            <div class="nav-buttons">
+                <li>
+                    <a href="careers.html">Careers</a>
+                </li>
 
-                <a href="tel:+917972219776" class="call-btn">
+                <li>
+                    <a href="contact.html">Contact</a>
+                </li>
 
-                    <i class="fa-solid fa-phone"></i>
+            </ul>
 
-                    Call
+        </nav>
 
-                </a>
+        <!-- Desktop Buttons -->
+        <div class="nav-buttons">
 
-                <a href="contact.html" class="quote-btn">
+            <a href="tel:+917972219776" class="call-btn">
+                <i class="fa-solid fa-phone"></i>
+                Call
+            </a>
 
-                    Get Quote
-
-                </a>
-
-            </div>
-
-            <!-- Mobile Toggle -->
-            <button class="menu-toggle">
-
-                <span></span>
-
-                <span></span>
-
-                <span></span>
-
-            </button>
-
-        </div>
-
-    </header>
-
-    <!-- =========================
-            MOBILE MENU
-    ========================== -->
-
-    <div class="mobile-menu">
-
-        <div class="mobile-header">
-
-            <img src="images/logo.png" alt="Logo">
-
-            <button class="close-menu">
-
-                <i class="fa-solid fa-xmark"></i>
-
-            </button>
+            <a href="contact.html" class="quote-btn">
+                Get Quote
+            </a>
 
         </div>
 
-        <ul>
+        <!-- Mobile Menu Button -->
+        <button class="menu-toggle" aria-label="Open Menu">
 
-            <li><a href="index.html">Home</a></li>
+            <span></span>
+            <span></span>
+            <span></span>
 
-            <li><a href="about.html">About</a></li>
-
-            <li><a href="services.html">Services</a></li>
-
-            <li><a href="solutions.html">Solutions</a></li>
-
-            <li><a href="industries.html">Industries</a></li>
-
-            <li><a href="careers.html">Careers</a></li>
-
-            <li><a href="contact.html">Contact</a></li>
-
-        </ul>
-
-        <div class="mobile-buttons">
-
-            <a href="#" class="call-btn">Call</a>
-
-            <a href="#" class="quote-btn">Get Quote</a>
-
-        </div>
+        </button>
 
     </div>
+
+</header>
+
+<!-- ==========================================
+            MOBILE MENU
+========================================== -->
+
+<div class="mobile-menu">
+
+    <div class="mobile-header">
+
+        <a href="index.html" class="logo">
+            <img src="images/pineapple.png" alt="PineapplePro">
+        </a>
+
+        <button class="close-menu" aria-label="Close Menu">
+
+            <i class="fa-solid fa-xmark"></i>
+
+        </button>
+
+    </div>
+
+    <ul class="mobile-links">
+
+        <li><a href="index.html">Home</a></li>
+
+        <li><a href="about.html">About</a></li>
+
+        <li><a href="services.html">Services</a></li>
+
+        <li><a href="solutions.html">Solutions</a></li>
+
+        <li><a href="industries.html">Industries</a></li>
+
+        <li><a href="careers.html">Careers</a></li>
+
+        <li><a href="contact.html">Contact</a></li>
+
+    </ul>
+
+    <div class="mobile-buttons">
+
+        <a href="tel:+917972219776" class="call-btn">
+            Call Now
+        </a>
+
+        <a href="contact.html" class="quote-btn">
+            Get Quote
+        </a>
+
+    </div>
+
+</div>
 
     <!-- =========================
             HERO SECTION
