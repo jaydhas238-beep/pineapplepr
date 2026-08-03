@@ -97,6 +97,45 @@
     margin-top:10px;
 
 }
+/* Contact Button */
+
+.contact-form-box .premium-btn{
+
+    width:100%;
+    justify-content:center;
+    margin-top:10px;
+
+    background:transparent;
+    border:1px solid rgba(255,255,255,.18);
+    color:#fff;
+
+}
+
+.contact-form-box .premium-btn::before{
+
+    background:#fff;
+
+}
+
+.contact-form-box .premium-btn span,
+.contact-form-box .premium-btn i{
+
+    color:#fff;
+
+}
+
+.contact-form-box .premium-btn:hover{
+
+    border-color:#fff;
+
+}
+
+.contact-form-box .premium-btn:hover span,
+.contact-form-box .premium-btn:hover i{
+
+    color:#000;
+
+}
 
 .contact-image{
 
