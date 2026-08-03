@@ -261,6 +261,78 @@
 
 }
 
+
+/*==================================
+        OFFICE LOCATION
+===================================*/
+
+.office-location{
+    padding:120px 0;
+    background:#050505;
+}
+
+.office-card{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:25px;
+    margin-top:60px;
+}
+
+.office-item{
+    background:#111;
+    border:1px solid rgba(255,255,255,.08);
+    border-radius:22px;
+    padding:40px 30px;
+    text-align:center;
+    transition:.35s;
+}
+
+.office-item:hover{
+    transform:translateY(-8px);
+    border-color:#fff;
+}
+
+.office-item i{
+    font-size:28px;
+    margin-bottom:20px;
+}
+
+.office-item h3{
+    font-size:18px;
+    margin-bottom:12px;
+}
+
+.office-item p{
+    color:#b5b5b5;
+    line-height:1.8;
+    font-size:15px;
+}
+
+.office-btn{
+    margin-top:50px;
+    display:flex;
+    justify-content:center;
+}
+
+@media(max-width:991px){
+
+.office-card{
+    grid-template-columns:repeat(2,1fr);
+}
+
+}
+
+@media(max-width:768px){
+
+.office-location{
+    padding:80px 0;
+}
+
+.office-card{
+    grid-template-columns:1fr;
+}
+
+}
 .premium-btn{
     position:relative;
     display:inline-flex;
