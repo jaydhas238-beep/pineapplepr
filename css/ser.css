@@ -372,6 +372,105 @@
 }
 
 }
+
+/*==================================
+        SERVICE PROCESS
+===================================*/
+
+.service-process{
+    padding:120px 0;
+    background:#050505;
+}
+
+.process-heading{
+    max-width:700px;
+    margin-bottom:70px;
+}
+
+.process-heading span{
+    display:block;
+    font-size:13px;
+    letter-spacing:2px;
+    text-transform:uppercase;
+    color:#999;
+    margin-bottom:15px;
+}
+
+.process-heading h2{
+    font-size:20px;
+    font-weight:700;
+    margin-bottom:20px;
+}
+
+.process-heading p{
+    font-size:15px;
+    color:#b5b5b5;
+    line-height:1.9;
+}
+
+.process-grid{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:30px;
+}
+
+.process-step{
+    position:relative;
+    padding:40px 30px;
+    border:1px solid rgba(255,255,255,.08);
+    border-radius:20px;
+    background:#111;
+    transition:.35s;
+}
+
+.process-step:hover{
+    transform:translateY(-8px);
+    border-color:#fff;
+}
+
+.step-number{
+    width:60px;
+    height:60px;
+    border-radius:50%;
+    border:1px solid rgba(255,255,255,.15);
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-size:18px;
+    font-weight:700;
+    margin-bottom:25px;
+}
+
+.process-step h3{
+    font-size:20px;
+    margin-bottom:15px;
+}
+
+.process-step p{
+    font-size:15px;
+    color:#b5b5b5;
+    line-height:1.8;
+}
+
+@media(max-width:991px){
+
+.process-grid{
+    grid-template-columns:repeat(2,1fr);
+}
+
+}
+
+@media(max-width:768px){
+
+.service-process{
+    padding:80px 0;
+}
+
+.process-grid{
+    grid-template-columns:1fr;
+}
+
+}
 .premium-btn{
     position:relative;
     display:inline-flex;
