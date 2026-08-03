@@ -167,6 +167,70 @@ order:1;
 }
 
 }
+
+/*==================================
+        VALUES
+===================================*/
+
+.values{
+    padding:120px 0;
+    background:#0a0a0a;
+}
+
+.values-grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:30px;
+    margin-top:60px;
+}
+
+.value-card{
+    background:#111;
+    border:1px solid rgba(255,255,255,.08);
+    border-radius:20px;
+    padding:45px 35px;
+    transition:.35s;
+}
+
+.value-card:hover{
+    transform:translateY(-8px);
+    border-color:#fff;
+}
+
+.value-icon{
+    width:65px;
+    height:65px;
+    border-radius:18px;
+    background:#1a1a1a;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    margin-bottom:25px;
+}
+
+.value-icon i{
+    font-size:26px;
+    color:#fff;
+}
+
+.value-card h3{
+    font-size:20px;
+    margin-bottom:15px;
+}
+
+.value-card p{
+    font-size:15px;
+    line-height:1.8;
+    color:#b5b5b5;
+}
+
+@media(max-width:991px){
+
+.values-grid{
+    grid-template-columns:1fr;
+}
+
+}
 /*==================================
             CTA
 ===================================*/
