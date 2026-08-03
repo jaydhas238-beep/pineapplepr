@@ -432,3 +432,45 @@ height:38px;
 }
 
 }
+
+.mobile-dropdown-btn{
+    width:100%;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    background:none;
+    border:none;
+    color:#fff;
+    font-size:18px;
+    font-weight:600;
+    cursor:pointer;
+    padding:10px 0;
+}
+
+.mobile-dropdown-btn i{
+    transition:.3s;
+}
+
+.mobile-submenu{
+    max-height:0;
+    overflow:hidden;
+    transition:max-height .35s ease;
+    padding-left:18px;
+}
+
+.mobile-submenu li{
+    margin:14px 0;
+}
+
+.mobile-submenu a{
+    color:#bdbdbd;
+    font-size:15px;
+}
+
+.mobile-dropdown.active .mobile-submenu{
+    max-height:300px;
+}
+
+.mobile-dropdown.active .mobile-dropdown-btn i{
+    transform:rotate(180deg);
+}
