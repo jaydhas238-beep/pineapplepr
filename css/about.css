@@ -276,6 +276,111 @@ order:1;
     }
 
 }
+
+/*==================================
+        OUR JOURNEY
+===================================*/
+
+.journey{
+    padding:120px 0;
+    background:#050505;
+}
+
+.journey-header{
+    max-width:700px;
+    margin-bottom:70px;
+}
+
+.journey-header span{
+    display:block;
+    font-size:13px;
+    letter-spacing:2px;
+    text-transform:uppercase;
+    color:#888;
+    margin-bottom:15px;
+}
+
+.journey-header h2{
+    font-size:20px;
+    font-weight:700;
+    margin-bottom:20px;
+}
+
+.journey-header p{
+    font-size:15px;
+    line-height:1.9;
+    color:#b5b5b5;
+}
+
+.timeline{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:30px;
+    position:relative;
+}
+
+.timeline::before{
+    content:"";
+    position:absolute;
+    top:28px;
+    left:0;
+    width:100%;
+    height:2px;
+    background:#222;
+}
+
+.timeline-item{
+    position:relative;
+    padding-top:60px;
+}
+
+.timeline-item::before{
+    content:"";
+    position:absolute;
+    top:20px;
+    left:0;
+    width:16px;
+    height:16px;
+    background:#fff;
+    border-radius:50%;
+}
+
+.year{
+    font-size:28px;
+    font-weight:700;
+    margin-bottom:15px;
+}
+
+.timeline-item h3{
+    font-size:20px;
+    margin-bottom:15px;
+}
+
+.timeline-item p{
+    font-size:15px;
+    line-height:1.8;
+    color:#b5b5b5;
+}
+
+@media(max-width:991px){
+
+.timeline{
+    grid-template-columns:1fr;
+}
+
+.timeline::before{
+    display:none;
+}
+
+.timeline-item{
+    padding-top:30px;
+}
+
+.timeline-item::before{
+    display:none;
+}
+
+}
 /*==================================
             CTA
 ===================================*/
