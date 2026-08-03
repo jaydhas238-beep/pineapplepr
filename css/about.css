@@ -508,6 +508,88 @@ order:1;
 .premium-btn:hover i{
     transform:translateX(6px) rotate(0deg);
 }
+
+
+/*==================================
+        TRUST
+===================================*/
+
+.trust{
+    padding:120px 0;
+    background:#050505;
+}
+
+.trust-header{
+    max-width:700px;
+    margin-bottom:70px;
+}
+
+.trust-header span{
+    font-size:13px;
+    letter-spacing:2px;
+    color:#888;
+    text-transform:uppercase;
+}
+
+.trust-header h2{
+    font-size:20px;
+    margin:18px 0;
+}
+
+.trust-header p{
+    font-size:15px;
+    color:#b5b5b5;
+    line-height:1.9;
+}
+
+.trust-grid{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:25px;
+}
+
+.trust-card{
+    background:#111;
+    border:1px solid rgba(255,255,255,.08);
+    border-radius:20px;
+    padding:45px 30px;
+    transition:.35s;
+}
+
+.trust-card:hover{
+    transform:translateY(-8px);
+    border-color:#fff;
+}
+
+.trust-card h3{
+    font-size:34px;
+    margin-bottom:12px;
+}
+
+.trust-card p{
+    font-size:15px;
+    color:#b5b5b5;
+}
+
+@media(max-width:991px){
+
+.trust-grid{
+    grid-template-columns:repeat(2,1fr);
+}
+
+}
+
+@media(max-width:768px){
+
+.trust{
+    padding:80px 0;
+}
+
+.trust-grid{
+    grid-template-columns:1fr;
+}
+
+}
 /*==================================
             CTA
 ===================================*/
