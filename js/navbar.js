@@ -24,3 +24,10 @@ document.querySelectorAll(".mobile-menu a").forEach(link => {
         document.body.style.overflow = "auto";
     });
 });
+
+const serviceBtn = document.querySelector(".mobile-dropdown-btn");
+const serviceDropdown = document.querySelector(".mobile-dropdown");
+
+serviceBtn.addEventListener("click", () => {
+    serviceDropdown.classList.toggle("active");
+});
