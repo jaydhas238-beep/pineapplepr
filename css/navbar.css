@@ -490,3 +490,21 @@ height:38px;
 .mobile-dropdown.active .mobile-dropdown-btn i{
     transform:rotate(180deg);
 }
+
+
+
+@media(max-width:768px){
+
+    .mobile-menu{
+        width:70%;
+    }
+
+}
+
+@media(max-width:480px){
+
+    .mobile-menu{
+        width:75%;
+    }
+
+}
