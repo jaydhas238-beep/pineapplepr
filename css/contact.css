@@ -526,3 +526,163 @@
 }
 
 }
+
+
+/*==================================
+        OFFICE LOCATION
+===================================*/
+
+.office-location{
+    padding:120px 0;
+    background:#050505;
+}
+
+/* Heading */
+
+.office-header{
+    max-width:720px;
+    margin-bottom:70px;
+}
+
+.office-header span{
+    display:block;
+    font-size:13px;
+    letter-spacing:2px;
+    text-transform:uppercase;
+    color:#888;
+    margin-bottom:18px;
+}
+
+.office-header h2{
+    font-size:48px;
+    font-weight:700;
+    line-height:1.15;
+    color:#fff;
+    margin-bottom:24px;
+}
+
+.office-header p{
+    max-width:650px;
+    font-size:18px;
+    line-height:1.9;
+    color:#b5b5b5;
+}
+
+/* Cards */
+
+.office-card{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:25px;
+}
+
+.office-item{
+    background:#111;
+    border:1px solid rgba(255,255,255,.08);
+    border-radius:22px;
+    padding:45px 30px;
+    text-align:center;
+    transition:.35s ease;
+}
+
+.office-item:hover{
+    transform:translateY(-8px);
+    border-color:#fff;
+}
+
+.office-item i{
+    font-size:30px;
+    margin-bottom:22px;
+    color:#fff;
+}
+
+.office-item h3{
+    font-size:20px;
+    font-weight:600;
+    margin-bottom:12px;
+    color:#fff;
+}
+
+.office-item p{
+    font-size:15px;
+    line-height:1.8;
+    color:#b5b5b5;
+}
+
+/* Button */
+
+.office-btn{
+    display:flex;
+    justify-content:center;
+    margin-top:55px;
+}
+
+/* Tablet */
+
+@media(max-width:991px){
+
+.office-location{
+    padding:100px 0;
+}
+
+.office-header{
+    margin-bottom:55px;
+}
+
+.office-header h2{
+    font-size:40px;
+}
+
+.office-header p{
+    font-size:17px;
+}
+
+.office-card{
+    grid-template-columns:repeat(2,1fr);
+}
+
+}
+
+/* Mobile */
+
+@media(max-width:768px){
+
+.office-location{
+    padding:80px 0;
+}
+
+.office-header{
+    margin-bottom:40px;
+}
+
+.office-header span{
+    font-size:12px;
+}
+
+.office-header h2{
+    font-size:32px;
+}
+
+.office-header p{
+    font-size:16px;
+}
+
+.office-card{
+    grid-template-columns:1fr;
+    gap:20px;
+}
+
+.office-item{
+    padding:35px 25px;
+}
+
+.office-btn{
+    margin-top:40px;
+}
+
+.office-btn .premium-btn{
+    width:100%;
+    justify-content:center;
+}
+
+}
