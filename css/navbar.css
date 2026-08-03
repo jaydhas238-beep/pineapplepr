@@ -468,7 +468,7 @@ height:38px;
 }
 
 .mobile-dropdown.active .mobile-submenu{
-    max-height:300px;
+     max-height:800px;
 }
 
 .mobile-dropdown.active .mobile-dropdown-btn i{
