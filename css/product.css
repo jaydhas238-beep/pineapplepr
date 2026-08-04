@@ -43,23 +43,77 @@
         PRODUCT SECTION
 ===================================*/
 
-.product-section{
-    padding:90px 0;
-    background:#050505;
-}
+/*==================================
+        PRODUCT SECTION HEADER
+===================================*/
 
 .product-section .section-header{
-    text-align:left;
-    margin-bottom:60px;
-    max-width:700px;
+    max-width:760px;
+    margin-bottom:70px;
 }
 
-.product-grid{
-    display:grid;
-    grid-template-columns:repeat(3,1fr);
-    gap:28px;
+.product-section .section-header span{
+    display:inline-block;
+    color:#8f8f8f;
+    font-size:13px;
+    font-weight:500;
+    letter-spacing:3px;
+    text-transform:uppercase;
+    margin-bottom:20px;
 }
 
+.product-section .section-header h2{
+    font-size:48px;
+    font-weight:700;
+    line-height:1.15;
+    letter-spacing:-1px;
+    color:#fff;
+    margin-bottom:24px;
+}
+
+.product-section .section-header p{
+    max-width:680px;
+    font-size:18px;
+    line-height:1.9;
+    color:#b5b5b5;
+}
+
+/*=========================
+      TABLET
+=========================*/
+
+@media(max-width:991px){
+
+.product-section .section-header h2{
+    font-size:40px;
+}
+
+.product-section .section-header p{
+    font-size:17px;
+}
+
+}
+
+/*=========================
+      MOBILE
+=========================*/
+
+@media(max-width:768px){
+
+.product-section .section-header{
+    margin-bottom:50px;
+}
+
+.product-section .section-header h2{
+    font-size:32px;
+}
+
+.product-section .section-header p{
+    font-size:16px;
+    line-height:1.8;
+}
+
+}
 
 /*==================================
         PRODUCT CARD
