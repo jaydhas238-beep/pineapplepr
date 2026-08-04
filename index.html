@@ -21,23 +21,39 @@
 </head>
 
 <body>
-    <div id="preloader">
+   <!--==================================
+        PRELOADER
+===================================-->
 
-    <video id="loaderDesktop"
-           autoplay
-           muted
-           playsinline>
+<div id="preloader">
+
+    <!-- Desktop & Tablet -->
+
+    <video
+        id="loaderDesktop"
+        autoplay
+        muted
+        playsinline
+        preload="auto">
 
         <source src="images/loader.mp4" type="video/mp4">
 
+        Your browser does not support the video tag.
+
     </video>
 
-    <video id="loaderMobile"
-           autoplay
-           muted
-           playsinline>
+    <!-- Mobile -->
+
+    <video
+        id="loaderMobile"
+        autoplay
+        muted
+        playsinline
+        preload="auto">
 
         <source src="images/loader2.mp4" type="video/mp4">
+
+        Your browser does not support the video tag.
 
     </video>
 
