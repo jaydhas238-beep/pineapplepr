@@ -44,3 +44,31 @@ ${message}`;
     );
 
 });
+
+
+/*==================================
+        PRELOADER
+===================================*/
+
+const preloader = document.getElementById("preloader");
+
+const desktopVideo = document.getElementById("loaderDesktop");
+const mobileVideo = document.getElementById("loaderMobile");
+
+const activeVideo = window.innerWidth <= 768
+    ? mobileVideo
+    : desktopVideo;
+
+document.body.style.overflow = "hidden";
+
+activeVideo.addEventListener("ended", () => {
+
+    setTimeout(() => {
+
+        preloader.classList.add("hide");
+
+        document.body.style.overflow = "auto";
+
+    },300);
+
+});
