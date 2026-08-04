@@ -50,25 +50,44 @@ ${message}`;
         PRELOADER
 ===================================*/
 
-const preloader = document.getElementById("preloader");
+/*==================================
+        PRELOADER
+===================================*/
 
-const desktopVideo = document.getElementById("loaderDesktop");
-const mobileVideo = document.getElementById("loaderMobile");
+window.addEventListener("load", () => {
 
-const activeVideo = window.innerWidth <= 768
-    ? mobileVideo
-    : desktopVideo;
+    const preloader = document.getElementById("preloader");
+    const desktopVideo = document.getElementById("loaderDesktop");
+    const mobileVideo = document.getElementById("loaderMobile");
 
-document.body.style.overflow = "hidden";
+    // Choose the correct video
+    const activeVideo = window.innerWidth <= 768
+        ? mobileVideo
+        : desktopVideo;
 
-activeVideo.addEventListener("ended", () => {
+    // Prevent scrolling while preloader is active
+    document.body.style.overflow = "hidden";
 
-    setTimeout(() => {
+    // Make sure the video starts from the beginning
+    activeVideo.currentTime = 0;
+
+    // Play the video
+    activeVideo.play().catch(err => {
+        console.log("Autoplay prevented:", err);
+    });
+
+    // Function to hide the preloader
+    function hidePreloader() {
 
         preloader.classList.add("hide");
-
         document.body.style.overflow = "auto";
 
-    },300);
+    }
+
+    // Hide when the video finishes
+    activeVideo.addEventListener("ended", hidePreloader);
+
+    // Fallback: hide after 6 seconds if "ended" doesn't fire
+    setTimeout(hidePreloader, 6000);
 
 });
