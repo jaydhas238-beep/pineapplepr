@@ -494,6 +494,48 @@
 }
 
 }
+
+
+.why-products .section-header{
+
+    max-width:760px;
+    margin-bottom:70px;
+
+}
+
+.why-products .section-header span{
+
+    display:inline-block;
+    font-size:13px;
+    letter-spacing:3px;
+    text-transform:uppercase;
+    color:#888;
+    margin-bottom:24px;
+
+}
+
+.why-products .section-header h2{
+
+    font-size:52px;
+    line-height:1.15;
+    font-weight:700;
+    letter-spacing:-1px;
+
+    margin-bottom:28px;
+
+}
+
+.why-products .section-header p{
+
+    max-width:700px;
+
+    font-size:18px;
+
+    line-height:1.9;
+
+    color:#b5b5b5;
+
+}
 .premium-btn{
     position:relative;
     display:inline-flex;
