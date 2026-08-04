@@ -73,63 +73,28 @@ window.addEventListener("load", () => {
     const desktopVideo = document.getElementById("loaderDesktop");
     const mobileVideo = document.getElementById("loaderMobile");
 
-    // Exit if preloader doesn't exist
-    if(!preloader){
-        return;
-    }
+    if (!preloader) return;
 
-    // Select correct video
-    let activeVideo;
+    const activeVideo = window.innerWidth <= 768
+        ? mobileVideo
+        : desktopVideo;
 
-    if(window.innerWidth <= 768){
-
-        activeVideo = mobileVideo;
-
-        if(desktopVideo){
-            desktopVideo.pause();
-            desktopVideo.style.display = "none";
-        }
-
-    }else{
-
-        activeVideo = desktopVideo;
-
-        if(mobileVideo){
-            mobileVideo.pause();
-            mobileVideo.style.display = "none";
-        }
-
-    }
-
-    // If video is missing, hide preloader immediately
-    if(!activeVideo){
-
+    if (!activeVideo) {
         preloader.classList.add("hide");
-        document.body.style.overflow = "auto";
         return;
-
     }
 
     document.body.style.overflow = "hidden";
 
     activeVideo.currentTime = 0;
 
-    activeVideo.play().catch((err)=>{
+    activeVideo.play().catch(err => console.log(err));
 
-        console.log(err);
-
-    });
-
-    function hidePreloader(){
+    activeVideo.onended = () => {
 
         preloader.classList.add("hide");
         document.body.style.overflow = "auto";
 
-    }
-
-    activeVideo.addEventListener("ended", hidePreloader);
-
-    // Fallback after 6 seconds
-    setTimeout(hidePreloader,6000);
+    };
 
 });
