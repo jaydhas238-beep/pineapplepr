@@ -1,30 +1,45 @@
+/*==================================
+        FAQ
+===================================*/
+
 const faqItems = document.querySelectorAll(".faq-item");
 
 faqItems.forEach(item => {
 
     const button = item.querySelector(".faq-question");
 
-    button.addEventListener("click", () => {
+    if(button){
 
-        item.classList.toggle("active");
+        button.addEventListener("click", () => {
 
-    });
+            item.classList.toggle("active");
+
+        });
+
+    }
 
 });
 
-document
-.getElementById("whatsappForm")
-.addEventListener("submit", function(e){
 
-    e.preventDefault();
+/*==================================
+        WHATSAPP FORM
+===================================*/
 
-    const name = document.getElementById("name").value;
-    const email = document.getElementById("email").value;
-    const phone = document.getElementById("phone").value;
-    const service = document.getElementById("service").value;
-    const message = document.getElementById("message").value;
+const whatsappForm = document.getElementById("whatsappForm");
 
-    const text =
+if(whatsappForm){
+
+    whatsappForm.addEventListener("submit", function(e){
+
+        e.preventDefault();
+
+        const name = document.getElementById("name").value;
+        const email = document.getElementById("email").value;
+        const phone = document.getElementById("phone").value;
+        const service = document.getElementById("service").value;
+        const message = document.getElementById("message").value;
+
+        const text =
 `*New Website Enquiry*
 
 👤 Name: ${name}
@@ -38,17 +53,15 @@ document
 📝 Message:
 ${message}`;
 
-    window.open(
-        `https://wa.me/917972219776?text=${encodeURIComponent(text)}`,
-        "_blank"
-    );
+        window.open(
+            `https://wa.me/917972219776?text=${encodeURIComponent(text)}`,
+            "_blank"
+        );
 
-});
+    });
 
+}
 
-/*==================================
-        PRELOADER
-===================================*/
 
 /*==================================
         PRELOADER
@@ -60,34 +73,63 @@ window.addEventListener("load", () => {
     const desktopVideo = document.getElementById("loaderDesktop");
     const mobileVideo = document.getElementById("loaderMobile");
 
-    // Choose the correct video
-    const activeVideo = window.innerWidth <= 768
-        ? mobileVideo
-        : desktopVideo;
+    // Exit if preloader doesn't exist
+    if(!preloader){
+        return;
+    }
 
-    // Prevent scrolling while preloader is active
+    // Select correct video
+    let activeVideo;
+
+    if(window.innerWidth <= 768){
+
+        activeVideo = mobileVideo;
+
+        if(desktopVideo){
+            desktopVideo.pause();
+            desktopVideo.style.display = "none";
+        }
+
+    }else{
+
+        activeVideo = desktopVideo;
+
+        if(mobileVideo){
+            mobileVideo.pause();
+            mobileVideo.style.display = "none";
+        }
+
+    }
+
+    // If video is missing, hide preloader immediately
+    if(!activeVideo){
+
+        preloader.classList.add("hide");
+        document.body.style.overflow = "auto";
+        return;
+
+    }
+
     document.body.style.overflow = "hidden";
 
-    // Make sure the video starts from the beginning
     activeVideo.currentTime = 0;
 
-    // Play the video
-    activeVideo.play().catch(err => {
-        console.log("Autoplay prevented:", err);
+    activeVideo.play().catch((err)=>{
+
+        console.log(err);
+
     });
 
-    // Function to hide the preloader
-    function hidePreloader() {
+    function hidePreloader(){
 
         preloader.classList.add("hide");
         document.body.style.overflow = "auto";
 
     }
 
-    // Hide when the video finishes
     activeVideo.addEventListener("ended", hidePreloader);
 
-    // Fallback: hide after 6 seconds if "ended" doesn't fire
-    setTimeout(hidePreloader, 6000);
+    // Fallback after 6 seconds
+    setTimeout(hidePreloader,6000);
 
 });
