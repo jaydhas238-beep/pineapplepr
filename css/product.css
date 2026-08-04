@@ -419,6 +419,81 @@
 
 }
 
+
+/*==================================
+      WHY PRODUCTS
+===================================*/
+
+.why-products{
+    padding:110px 0;
+    background:#0a0a0a;
+}
+
+.why-grid{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:25px;
+}
+
+.why-card{
+    background:#111;
+    border:1px solid rgba(255,255,255,.08);
+    border-radius:22px;
+    padding:45px 30px;
+    transition:.35s ease;
+}
+
+.why-card:hover{
+    transform:translateY(-8px);
+    border-color:#fff;
+}
+
+.why-icon{
+    width:65px;
+    height:65px;
+    border-radius:16px;
+    background:#181818;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    margin-bottom:25px;
+}
+
+.why-icon i{
+    font-size:26px;
+    color:#fff;
+}
+
+.why-card h3{
+    font-size:22px;
+    margin-bottom:15px;
+}
+
+.why-card p{
+    font-size:15px;
+    color:#b5b5b5;
+    line-height:1.8;
+}
+
+@media(max-width:991px){
+
+.why-grid{
+    grid-template-columns:repeat(2,1fr);
+}
+
+}
+
+@media(max-width:768px){
+
+.why-products{
+    padding:80px 0;
+}
+
+.why-grid{
+    grid-template-columns:1fr;
+}
+
+}
 .premium-btn{
     position:relative;
     display:inline-flex;
