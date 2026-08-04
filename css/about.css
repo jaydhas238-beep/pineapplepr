@@ -5,8 +5,13 @@
 .about-hero{
 
     position:relative;
-    height:100vh;
+
+    height:calc(100vh - 82px);
+
+    margin-top:82px;
+
     overflow:hidden;
+
     display:flex;
     align-items:center;
     justify-content:center;
@@ -73,7 +78,7 @@
 
 .about-content h1{
 
-    font-size:86px;
+    font-size:70px;
 
     font-weight:700;
 
@@ -89,7 +94,7 @@
 
     margin:0 auto;
 
-    font-size:22px;
+    font-size:17px;
 
     line-height:1.8;
 
@@ -132,6 +137,12 @@
     font-size:19px;
 
 }
+        .about-hero{
+
+    height:calc(100vh - 75px);
+    margin-top:75px;
+
+}
 
 }
 
@@ -139,9 +150,8 @@
 
 .about-hero{
 
-    height:90vh;
-
-    padding:0 20px;
+    height:calc(90vh - 75px);
+    margin-top:75px;
 
 }
 
