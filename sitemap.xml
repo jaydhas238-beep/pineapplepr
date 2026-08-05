@@ -44,10 +44,9 @@
   <url>
     <loc>https://pineapplepro.in/refurbished.html</loc>
   </url>
-   <url>
-    <loc>https://pineapplepro.in/
-software-solutions.html</loc>
-  </url>
+  <url>
+  <loc>https://pineapplepro.in/software-solutions.html</loc>
+</url>
 
 </urlset>
 
@@ -55,4 +54,3 @@ software-solutions.html</loc>
 
 
 
-Add sitemap.xml
