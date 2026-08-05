@@ -40,21 +40,21 @@ if(whatsappForm){
         const message = document.getElementById("message").value;
 
         const text =
-`*New Website Enquiry*
+`Enquiry Through Website
 
-👤 Name: ${name}
+ Name: ${name}
 
-📧 Email: ${email}
+ Email: ${email}
 
-📱 Phone: ${phone}
+ Phone: ${phone}
 
-💼 Service: ${service}
+ Service: ${service}
 
-📝 Message:
+ Message:
 ${message}`;
 
         window.open(
-            `https://wa.me/917972219776?text=${encodeURIComponent(text)}`,
+            `https://wa.me/9197305 77654?text=${encodeURIComponent(text)}`,
             "_blank"
         );
 
