@@ -31,3 +31,14 @@ const serviceDropdown = document.querySelector(".mobile-dropdown");
 serviceBtn.addEventListener("click", () => {
     serviceDropdown.classList.toggle("active");
 });
+
+
+document.querySelectorAll(".mobile-dropdown-toggle").forEach(toggle => {
+
+    toggle.addEventListener("click", function () {
+
+        this.parentElement.classList.toggle("active");
+
+    });
+
+});
