@@ -615,62 +615,39 @@ height:38px;
     transform: rotate(180deg);
 }
 
-/* WhatsApp Navbar Icon */
-
-.nav-links .fa-whatsapp {
-    font-size: 22px;
-    color: #25D366;
-    transition: all 0.3s ease;
-}
-
-.nav-links .fa-whatsapp:hover {
-    color: #ffffff;
-    transform: scale(1.15);
-}
-
-.whatsapp-nav{
-    width:42px;
-    height:42px;
-    border:1px solid rgba(255,255,255,.15);
-    border-radius:50%;
+.whatsapp-btn{
     display:flex;
     align-items:center;
     justify-content:center;
-    transition:.3s;
+    gap:12px;
+
+    padding:14px 32px;
+
+    border:1px solid rgba(255,255,255,.18);
+    border-radius:999px;
+
+    background:#fff;
+    color:#000;
+
+    text-decoration:none;
+    font-size:16px;
+    font-weight:600;
+
+    transition:.35s ease;
 }
 
-.whatsapp-nav i{
-    font-size:20px;
+.whatsapp-btn i{
     color:#25D366;
+    font-size:20px;
 }
 
-.whatsapp-nav:hover{
-    background:#25D366;
-    border-color:#25D366;
+.whatsapp-btn:hover{
+    transform:translateY(-2px);
+    box-shadow:0 12px 30px rgba(255,255,255,.12);
 }
 
-.whatsapp-nav:hover i{
-    color:#fff;
-}
-
-
-
-.mobile-whatsapp-link{
+.nav-buttons{
     display:flex;
     align-items:center;
-    gap:12px;
-    color:#fff;
-    text-decoration:none;
-    padding:14px 20px;
-    font-weight:500;
-    transition:.3s;
-}
-
-.mobile-whatsapp-link i{
-    color:#25D366;
-    font-size:22px;
-}
-
-.mobile-whatsapp-link:hover{
-    color:#25D366;
+    gap:18px;
 }
