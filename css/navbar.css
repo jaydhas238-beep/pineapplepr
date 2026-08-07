@@ -683,3 +683,11 @@ height:38px;
     }
 
 }
+/* Hide top navbar social icons on mobile */
+@media (max-width: 768px) {
+
+    .nav-social {
+        display: none !important;
+    }
+
+}
