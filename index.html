@@ -866,32 +866,7 @@
     <script src="js/script.js" defer></script>
    <script src="js/navbar.js" defer></script>
 
-    <script>
-document.addEventListener("DOMContentLoaded", function () {
-    const desktopVideo = document.getElementById("loaderDesktop");
-    const mobileVideo = document.getElementById("loaderMobile");
 
-    function controlLoaderVideo() {
-        const isMobile = window.innerWidth <= 768;
-
-        if (isMobile) {
-            desktopVideo.pause();
-            desktopVideo.currentTime = 0;
-
-            mobileVideo.play();
-        } else {
-            mobileVideo.pause();
-            mobileVideo.currentTime = 0;
-
-            desktopVideo.play();
-        }
-    }
-
-    controlLoaderVideo();
-
-    window.addEventListener("resize", controlLoaderVideo);
-});
-    </script>
 
 </body>
 
